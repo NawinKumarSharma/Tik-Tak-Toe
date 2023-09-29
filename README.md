@@ -10,42 +10,46 @@ Welcome to the Tic-Tac-Toe Game project implemented using React, TypeScript, and
 - **Responsive Design**: The game is responsive and adapts to various screen sizes, including mobile devices.
 - **Easy Setup**: Get started quickly by cloning the repository and running a few simple commands.
 
+![image](https://github.com/NawinKumarSharma/Tik-Tak-Toe/assets/126372969/87398ddd-de6c-461d-adf0-6e51ccb59976)
+
 ## Getting Started
 
 Follow these steps to get the Tic-Tac-Toe game up and running on your local machine:
 
 1. Clone the repository to your local machine:
 
-   ```bash
-   git clone https://github.com/nawinkumarsharma/tik-tak-toe
+```bash
+git clone https://github.com/nawinkumarsharma/tik-tak-toe
+```
 Now,
-1.Navigate to the project directory:
+
+1. Navigate to the project directory:
 
 ```bash
 cd tic-tac-toe
 ```
-2.Install the project dependencies using either npm or yarn:
+2. Install the project dependencies using either npm or yarn:
 
 ```bash
 npm install
 # or
 yarn install
 ```
-3.Start the development server:
+3. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
 ```
-4.Open your web browser and navigate to http://localhost:3000 to play the game!
+4. Open your web browser and navigate to http://localhost:3000 to play the game!
 
-###Usage
+## Usage
 -Players can take turns by clicking on the game board to make their moves.
 -The game will automatically detect a win, loss, or draw and display the result.
 -To restart the game, click the "Restart" button.
 
-###Folder Structure
+## Folder Structure
 The project's folder structure is organized for maintainability and ease of development:
 
 -src/: Contains the source code for the Tic-Tac-Toe game.
@@ -53,7 +57,7 @@ The project's folder structure is organized for maintainability and ease of deve
 -App.tsx: The main application component.
 -public/: Static assets and the HTML template.
 
-###Contributing
+## Contributing
 Contributions are welcome! If you'd like to improve this project, feel free to open an issue or create a pull request.
 
 Enjoy playing Tic-Tac-Toe with React, TypeScript, and Vite!
