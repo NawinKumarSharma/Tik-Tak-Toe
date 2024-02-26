@@ -24,30 +24,32 @@ const App = () => {
     return false;
   }
   const handleBlockClick = (index: number) => {
-
-    if (checkWinner(state)) {
+    // Check if there's already a winner or if the block is already filled
+    if (checkWinner(state) || state[index] !== null) {
       return;
     }
-
-    const stateCopy = Array.from(state);
-
-    if (stateCopy[index] !== null) return;
-
+  
+    const stateCopy = [...state];
     stateCopy[index] = currentTurn;
-
+  
     setCurrentTurn(currentTurn === "X" ? "O" : "X");
     setState(stateCopy);
-
+  
     setTimeout(() => {
       // Check if someone won
       const win = checkWinner(stateCopy);
-
+      const isDraw = stateCopy.every((block) => block !== null); // Check for draw
+  
       if (win) {
         alert(`${currentTurn} won the game`);
+        window.location.reload();
+      } else if (isDraw) {
+        alert("It's a draw!");
+        window.location.reload();
       }
     }, 100);
-  }
-
+  };
+  
   return (
     <>
     <div className='text'>
